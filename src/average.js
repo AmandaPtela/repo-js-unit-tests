@@ -12,21 +12,22 @@
     - average([1, '2']) // Retorno: undefined;
 */
 //Iniciando
+
 const average = (numeros) => {
   
-  let i = 0;
-  let media ;
-  for (i = 0; i < numeros.length; i += 1){
-    media = numeros[i] + numeros[i] / numeros.length;
-  }
-  if (numeros.length > 0 && typeof numeros === 'number') {
-    return(Math.round(media));
-  }
-  else{
+  if (numeros.length === 0){
     return undefined;
   }
-};
-
-average(['3,4,5,6,7']);
+  let media = 0;
+  for (let i = 0; i < numeros.length; i += 1){
+    if (typeof numeros[i] !== 'number') {
+     return undefined;
+    }
+    media += numeros[i];
+  }
+  let resultado = Math.round(media / numeros.length);
+  return(resultado);
+}
+average([3,4,5])
 
 module.exports = average;
