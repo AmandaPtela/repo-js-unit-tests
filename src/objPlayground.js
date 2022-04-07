@@ -41,15 +41,4 @@ const arrayGenerator = (type, object) => {
   const resultado = Object[type](object);
   return resultado;
 };
-/*   for (let i = 0 ; i < object.length; i += 1){
-    if (type == 'keys') {
-      return(object.keys);
-    }
-    else if (type == 'values'){
-      return (object.values);
-    }
-    else if (type == 'values'){
-    return(object.entries);
-    }
-  } */
 module.exports = { calculator, arrayGenerator };
