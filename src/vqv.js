@@ -16,9 +16,9 @@
       #VQV!'
 */
 
-const vqv = (nome, idade) => typeof nome == 'string' 
-? `Oi, meu nome é ${nome}!\nTenho ${idade} anos,\ntrabalho na Trybe e mando muito em programação!\n#VQV!` 
-: undefined;
+const vqv = (nome, idade) => typeof nome == 'string'
+  ? `Oi, meu nome é ${nome}!\nTenho ${idade} anos,\ntrabalho na Trybe e mando muito em programação!\n#VQV!`
+  : undefined;
 
 
 
