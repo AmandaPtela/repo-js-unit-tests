@@ -16,10 +16,11 @@
       #VQV!'
 */
 
-const vqv = (nome, idade) => typeof nome == 'string'
-  ? `Oi, meu nome é ${nome}!\nTenho ${idade} anos,\ntrabalho na Trybe e mando muito em programação!\n#VQV!`
+const vqv = (nome, idade) => typeof nome === 'string'
+  ? `Oi, meu nome é ${nome}!\n
+  Tenho ${idade} anos,\n
+  trabalho na Trybe e mando muito em programação!\n
+  #VQV!`
   : undefined;
-
-
 
 module.exports = vqv;
