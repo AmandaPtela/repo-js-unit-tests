@@ -26,7 +26,7 @@ const circle = require('../src/circle');
 describe('4 - Implemente os casos de teste para a função `circle`', () => {
 
   it("4.1 - Verifica se a função retorne 'undefined' caso o parâmetro não seja um número", () => {
-    expect(circle('2')).toBe('undefined');
+    expect(circle('2')).toBeUndefined;
     expect(typeof circle(4)).toEqual('object');
     expect(Object.keys(circle(6)).length).toBe(3);
     expect(circle('')).toBe('undefined');
