@@ -29,7 +29,7 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
     expect(circle('2')).toBeUndefined();
     expect(typeof circle(4)).toEqual('object');
     expect(Object.keys(circle(6)).length).toBe(3);
-    expect(circle('')).toBe('undefined');
+    expect(circle('')).toBeUndefined();
     expect((circle(2).circumference)).toBe(circle(2).circumference);
     expect((circle(3).area)).toBe(circle(3).area);
     expect(circle(3)).toEqual({ radius: 3, area: 28.259999999999998, circumference: 18.84 });
