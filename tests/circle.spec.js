@@ -22,7 +22,7 @@ const circle = require('../src/circle');
 
   OBS: Lembre-se que você não precisa se preocupar com o describe e o it por enquanto, isso será aprendido posteriormente.
 */
-
+// Feito com ajuda do colega Tassio Henrique da turma 19B e de colegas da turma 21A
 describe('4 - Implemente os casos de teste para a função `circle`', () => {
   // ESCREVA SEUS TESTES ABAIXO:
   // Teste se circle retorna undefined, caso o parâmetro passado não seja um número.
